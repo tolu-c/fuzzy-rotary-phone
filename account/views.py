@@ -24,4 +24,4 @@ def user_login(request):
                 return HttpResponse('Invalid username or password.')
     else:
         form = LoginForm()
-    return render(request, 'account/ogin.html', {'form': 'form'})
+    return render(request, 'account/login.html', {'form': form})
